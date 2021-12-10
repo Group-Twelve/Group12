@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Real Estate Management System</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+<section style ="color: darkgrey;">
+  <div style ="color: darkgrey;" class="click-closed"></div>
+  <!--/ Form Search Star /-->
+  <div style="color:blue;" class="box-collapse ">
+    <div style="color:blue; class="title-box-d">
+      <h3 class="title-d"><i>Search Property</i></h3>
+    </div>
+    <span class="close-box-collapse right-boxed ion-ios-close"></span>
+    <div class="box-collapse-wrap form">
+      <form  class="form-a">
+        <div class="row">
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label for="Type">Keyword</label>
+              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="Type">Type</label>
+              <select class="form-control form-control-lg form-control-a" id="Type">
+                <option>All Type</option>
+                <option>House for rent</option>
+                <option>House for sale</option>
+                <option>Plot for sale</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="city">City/District</label>
+              <select class="form-control form-control-lg form-control-a" id="city">
+                <option>Mzuzu</option>
+                <option>Lilongwe</option>
+                <option>Blantyre</option>
+                <option>Zomba</option>
+                <option>Mangochi</option>
+                 <option>Mchinji</option>
+                  <option>Chitipa</option>
+                   <option>Ntcheu</option>
+                    <option>Thyolo</option>
+                     <option>Nkhatabay</option>
+
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="bedrooms">Bedrooms</label>
+              <select class="form-control form-control-lg form-control-a" id="bedrooms">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="garages">Garages</label>
+              <select class="form-control form-control-lg form-control-a" id="garages">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="bathrooms">Bathrooms</label>
+              <select class="form-control form-control-lg form-control-a" id="bathrooms">
+                <option>Any room(s)</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="price"> Prices</label>
+              <select class="form-control form-control-lg form-control-a" id="price">
+                <option>Unlimited</option>
+                <option>K100,000</option>
+                <option>K150,000</option>
+                <option>K300,000</option>
+                <option>K200,000</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button style="color:blue" type="submit" class="btn btn-b"><i>Search Property</i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--/ Form Search End /-->
+
+  <!--/ Nav Star /-->
+  <nav style="color:black;" class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div style ="color: darkgrey;" class="container">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="index.html" style="color:blue; font-size: 55px;">Real Estate <span style="color:blue" class="color-b">Managent System</span></a>
+      <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-expanded="false">
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li style="color:blue" class="nav-item">
+            <a class="nav-link active" href="index.html" style="color:blue"><i>Home</i></a>
+          </li>
+          <li style="color:blue" class="nav-item">
+            <a style="color:blue" class="nav-link" href="About.html"><i>About</i></a>
+          </li>
+          <li style="color:blue" class="nav-item">
+            <a style="color:blue" class="nav-link" href="Properties.html"><i>Properties</i></a>
+          </li>
+          <li class="nav-item" style="color:blue">
+            <a style="color:blue" class="nav-link" href="contact.html"><i>Contact Us</i></a>
+          </li>
+
+            <li style="color:blue">
+            <a style="color:blue" class="nav-link" href="user login.html"><i>Sign In</i></a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-expanded="false">
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+</section>
+  <!--/ Nav End /-->
+
+  <!--/ Carousel Star /-->
+  <div class="intro intro-carousel">
+    <div id="carousel" class="owl-carousel owl-theme">
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-1.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    <p class="intro-title-top">Blantyre, Chirimba
+                      <br></p>
+                    <h1 class="intro-title mb-4">
+                      <span class="color-b"> </span> 
+                      <br>Chirimba, Blantyre</h1>
+                    <p class="intro-subtitle intro-price">
+                      <a href="#"><span class="price-a"  style="border-color: blue;">rent K200, 000</span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-2.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    <p class="intro-title-top">Area 25, Lilongwe
+                      <br></p>
+                    <h1 class="intro-title mb-4">
+                      <span class="color-b"> </span>
+                      <br>Area 25 C, Lilongwe</h1>
+                    <p class="intro-subtitle intro-price">
+                      <a style="border-color:blue:" href="#"><span  style="border-color: blue;" class="price-a">rent | K 150,000</span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-3.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    <p class="intro-title-top">Matawale, Zomba
+                      <br></p>
+                    <h1 class="intro-title mb-4">
+                      <span class="color-b"> </span>
+                      <br>Matawale, Zomba</h1>
+                    <p class="intro-subtitle intro-price">
+                      <a href="#"><span class="price-a" style="border-color: blue;">for sale | K 10 Million</span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Carousel end /-->
+
+ 
+
+  <!--/ Property Star /-->
+  <section   class="section-property section-t8">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-wrap d-flex justify-content-between">
+            <div class="title-box">
+              <h2 class="title-a"><i style="font-size: 40px;">Latest Properties</i></h2>
+            </div>
+            <div class="title-link">
+              <a href="property-grid.html">All Property
+                <span class="ion-ios-arrow-forward"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="property-carousel" class="owl-carousel owl-theme">
+        <div class="carousel-item-b">
+          <div class="card-box-a card-shadow">
+            <div class="img-box-a">
+              <img src="img/property-2.jpg" alt="" class="img-a img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-overlay-a-content">
+                <div class="card-header-a">
+                  <h2 class="card-title-a">
+                    <a href="property-single.html">
+                      <br /> Mangochi</a>
+                  </h2>
+                </div>
+                <div class="card-body-a">
+                  <div class="price-box d-flex">
+                    <span class="price-a" style="border-color: darkgrey;">>rent | K100, 000</span>
+                  </div>
+                  <a href="#" class="link-a">Click here to view
+                    <span class="ion-ios-arrow-forward"></span>
+                  </a>
+                </div>
+                <div style="border-color: blue;" class="card-footer-a">
+                  <ul class="card-info d-flex justify-content-around">
+                    <li>
+                      <h4 class="card-info-title">Area</h4>
+                      <span>150m
+                        <sup>2</sup>
+                      </span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Beds</h4>
+                      <span>4</span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Baths</h4>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Garages</h4>
+                      <span>1</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item-b">
+          <div class="card-box-a card-shadow">
+            <div class="img-box-a">
+              <img src="img/house6.jpg" alt="" class="img-a img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-overlay-a-content">
+                <div class="card-header-a">
+                  <h2 class="card-title-a">
+                    <a href="property-single.html">
+                      <br />Area 47, Lilongwe</a>
+                  </h2>
+                </div>
+                <div class="card-body-a">
+                  <div class="price-box d-flex">
+                    <span class="price-a" style="border-color: darkgrey;">for sale | K 20 Million</span>
+                  </div>
+                  <a href="property-single.html" class="link-a">Click here to view
+                    <span class="ion-ios-arrow-forward"></span>
+                  </a>
+                </div>
+                <div class="card-footer-a">
+                  <ul class="card-info d-flex justify-content-around">
+                    <li>
+                      <h4 class="card-info-title">Area</h4>
+                      <span>340m
+                        <sup>2</sup>
+                      </span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Beds</h4>
+                      <span>3</span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Baths</h4>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Garages</h4>
+                      <span>2</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item-b">
+          <div class="card-box-a card-shadow">
+            <div class="img-box-a">
+              <img src="img/house-1.jpg" alt="" class="img-a img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-overlay-a-content">
+                <div class="card-header-a">
+                  <h2 class="card-title-a">
+                    <a href="property-single.html"> 
+                      <br />Namiwawa, Blantyre </a>
+                  </h2>
+                </div>
+                <div class="card-body-a">
+                  <div class="price-box d-flex">
+                    <span class="price-a" style="border-color: darkgrey;">rent | K500, 000</span>
+                  </div>
+                  <a href="property-single.html" class="link-a"style="border-color: darkgrey;" >Click here to view
+                    <span class="ion-ios-arrow-forward"></span>
+                  </a>
+                </div>
+                <div class="card-footer-a">
+                  <ul class="card-info d-flex justify-content-around">
+                    <li>
+                      <h4 class="card-info-title">Area</h4>
+                      <span>340m
+                        <sup>2</sup>
+                      </span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Beds</h4>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Baths</h4>
+                      <span>1</span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Garages</h4>
+                      <span>1</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item-b">
+          <div class="card-box-a card-shadow">
+            <div class="img-box-a">
+              <img src="img/house-2" alt="" class="img-a img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-overlay-a-content">
+                <div class="card-header-a">
+                  <h2 class="card-title-a">
+                    <a href="property-single.html">
+                      <br />Mangochi</a>
+                  </h2>
+                </div>
+                <div class="card-body-a">
+                  <div class="price-box d-flex">
+                    <span class="price-a">rent | K200,000</span>
+                  </div>
+                  <a href="property-single.html" class="link-a">Click here to view
+                    <span class="ion-ios-arrow-forward"></span>
+                  </a>
+                </div>
+                <div class="card-footer-a">
+                  <ul class="card-info d-flex justify-content-around">
+                    <li>
+                      <h4 class="card-info-title">Area</h4>
+                      <span>340m
+                        <sup>3</sup>
+                      </span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Beds</h4>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Baths</h4>
+                      <span>11</span>
+                    </li>
+                    <li>
+                      <h4 class="card-info-title">Garages</h4>
+                      <span>1</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Property End /-->
+
+ 
+ 
+
+  <!--/ Testimonials Star /-->
+  <section class="section-testimonials section-t8 nav-arrow-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-wrap d-flex justify-content-between">
+            <div class="title-box">
+              <h2 class="title-a"><i style="font-size: 40px;">Testimonials</i></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="testimonial-carousel" class="owl-carousel owl-arrow">
+        <div class="carousel-item-a">
+          <div class="testimonials-box">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="testimonial-img">
+                  <img src="img/testimonial-2.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="testimonial-ico">
+                  <span class="ion-ios-quote"></span>
+                </div>
+                <div class="testimonials-content">
+                  <p class="testimonial-text">
+                    This agency helped me to find our best house last year, try them.
+                  </p>
+                </div>
+                <div class="testimonial-author-box">
+                  
+                  <h5 class="testimonial-author">Timothy</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item-a">
+          <div class="testimonials-box">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="testimonial-img">
+                  <img src="img/testimonial-1.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="testimonial-ico">
+                  <span class="ion-ios-quote"></span>
+                </div>
+                <div class="testimonials-content">
+                  <p class="testimonial-text">
+                   This Agency helped me to find a plot in area 25 last year, try them.
+                  </p>
+                </div>
+                <div class="testimonial-author-box">
+                  
+                  <h5 class="testimonial-author">Robert</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Testimonials End /-->
+
+  <!--/ footer Star /-->
+  <section style ="background-color: darkgrey;" class="section-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand" style="color:blue"><i style="font-size: 40px;">Group 12 Real Estate Agency</i> </h3>
+            </div>
+            <div class="w-body-a">
+              <p class="w-text-a color-text-a">
+               <i> This Web application has been developed by Group 12 members at Malawi University Of Science and Technology</i>
+              </p>
+            </div>
+            <div class="w-footer-a">
+              <ul class="list-unstyled">
+                <li class="color-a">
+                  <span class="color-text-a">Phone .</span> +265888239049</li>
+                <li class="color-a">
+                  <span class="color-text-a">Email .</span> robertjmaneno@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand" style="color:blue"><i style="font-size: 40px;">Group 12 Members</i></h3>
+            </div>
+            <div class="w-body-a">
+              <div class="w-body-a">
+                <ul class="list-unstyled">
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i> <a href="#">Robert  Maneno</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i> <a href="#">Esnart Harawa</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i> <a href="#">Uchindami Gondwe</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i> <a href="#">Peter Chimbuto</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i> <a href="#">Limbani Kuweluza</a>
+                  </li>
+                                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand" style="color:blue"><i style="font-size: 40px;">Social Media</i></h3>
+            </div>
+            <div class="w-body-a">
+              <ul class="list-unstyled">
+                <li class="item-list-a">
+                 <i class="fa fa-angle-right"></i> <a href="#">Facebook</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="fa fa-angle-right"></i> <a href="#">Youtube</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="fa fa-angle-right"></i> <a href="#">Twitter</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="fa fa-angle-right"></i> <a href="#">WhatsApp</a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="nav-footer">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Property</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Sign In</a>
+              </li>
+            </ul>
+          </nav>
+             <div class="copyright-footer">
+            <p class="copyright color-text-a">
+              &copy; Copyright
+              <span class="color-a">Group 12 Real Estate Agency</span> <br>All Rights Reserved.
+            </p>
+          </div>
+          <div class="credits">
+           
+            Designed by <a href="https://bootstrapmade.com/"><i>Group 12 Members</i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
